@@ -59,7 +59,7 @@
     <link
         rel="preload"
         as="image"
-        href="mainbg.webp"
+        href="mainbgcard.jpg"
         type="image/webp"
         fetchpriority="high"
     >
@@ -124,7 +124,7 @@
                     rgba(0, 0, 0, 0.18),
                     rgba(0, 0, 0, 0.18)
                 ),
-                url("mainbg.webp");
+                url("mainbgcard.jpg");
 
             background-size: cover;
             background-position: center;
@@ -271,246 +271,96 @@
      OPENING INVITATION SCREEN
 ============================================================ -->
 
-<div
-    id="entrance-screen"
-    class="fixed inset-0 z-[100] overflow-y-auto flex items-center justify-center transition-opacity duration-1000 ease-in-out p-4 md:p-10"
->
+<div id="entrance-screen" class="fixed inset-0 z-[100] bg-[#faf9f7] p-4 sm:p-6 md:p-12 overflow-y-auto flex items-center justify-center transition-opacity duration-1000 ease-in-out" style="background-image: url('mainbgcard.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    
+    <!-- Removed h-full and added my-auto to ensure it centers and adapts to content height properly -->
+    <div class="relative w-full max-w-4xl mx-auto my-auto bg-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.4)] flex flex-col items-center justify-center overflow-hidden">
+        
+        <!-- Elegant Double Border System -->
+        <div class="absolute inset-3 md:inset-6 border border-[#c2a878]/30 pointer-events-none z-10"></div>
+        <div class="absolute inset-4 md:inset-8 border border-[#c2a878]/10 pointer-events-none z-10"></div>
 
-    <div
-        class="invitation-card relative w-full max-w-4xl mx-auto flex flex-col items-center justify-center overflow-hidden"
-    >
+        <!-- Refined Corner Accents -->
+        <div class="absolute top-3 left-3 md:top-6 md:left-6 w-6 md:w-12 h-6 md:h-12 border-t border-l border-[#c2a878] z-20"></div>
+        <div class="absolute top-3 right-3 md:top-6 md:right-6 w-6 md:w-12 h-6 md:h-12 border-t border-r border-[#c2a878] z-20"></div>
+        <div class="absolute bottom-3 left-3 md:bottom-6 md:left-6 w-6 md:w-12 h-6 md:h-12 border-b border-l border-[#c2a878] z-20"></div>
+        <div class="absolute bottom-3 right-3 md:bottom-6 md:right-6 w-6 md:w-12 h-6 md:h-12 border-b border-r border-[#c2a878] z-20"></div>
 
-        <!-- Outer Border -->
-        <div
-            class="absolute inset-3 md:inset-6 border border-[#c2a878]/40 pointer-events-none z-10"
-        ></div>
-
-        <!-- Inner Border -->
-        <div
-            class="absolute inset-5 md:inset-8 border border-[#c2a878]/15 pointer-events-none z-10"
-        ></div>
-
-
-        <!-- Corner Decorations -->
-
-        <div
-            class="absolute top-3 left-3 md:top-6 md:left-6 w-8 md:w-14 h-8 md:h-14 border-t border-l border-[#c2a878] z-20"
-        ></div>
-
-        <div
-            class="absolute top-3 right-3 md:top-6 md:right-6 w-8 md:w-14 h-8 md:h-14 border-t border-r border-[#c2a878] z-20"
-        ></div>
-
-        <div
-            class="absolute bottom-3 left-3 md:bottom-6 md:left-6 w-8 md:w-14 h-8 md:h-14 border-b border-l border-[#c2a878] z-20"
-        ></div>
-
-        <div
-            class="absolute bottom-3 right-3 md:bottom-6 md:right-6 w-8 md:w-14 h-8 md:h-14 border-b border-r border-[#c2a878] z-20"
-        ></div>
-
-
-        <!-- Content -->
-
-        <div
-            class="relative z-30 text-center flex flex-col items-center justify-center w-full px-7 py-12 md:px-16 md:py-16"
-        >
-
-            <!-- Ornament -->
-
-            <div
-                class="fade-in mb-5 md:mb-8"
-                style="animation-delay: 0.1s;"
-            >
-
-                <svg
-                    class="w-10 h-10 md:w-12 md:h-12 text-[#c2a878] opacity-90 mx-auto"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="0.5"
-                >
-
-                    <path
-                        d="M12 2C12 2 14 6 18 6C18 10 12 14 12 14C12 14 6 10 6 6C10 6 12 2 12 2Z"
-                        fill="currentColor"
-                        fill-opacity="0.1"
-                    ></path>
-
-                    <path
-                        d="M12 14C12 14 15 17 15 21C11 21 12 14 12 14Z"
-                    ></path>
-
-                    <path
-                        d="M12 14C12 14 9 17 9 21C13 21 12 14 12 14Z"
-                    ></path>
-
+        <!-- Main Content (Adjusted padding and vertical margins for mobile) -->
+        <div class="relative z-30 text-center flex flex-col items-center justify-center w-full px-6 py-8 md:px-16 md:py-12">
+            
+            <!-- Decorative Icon -->
+            <div class="fade-in mb-4 md:mb-8" style="animation-delay: 0.1s;">
+                <svg class="w-8 h-8 md:w-10 md:h-10 text-[#c2a878] opacity-80 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+                    <path d="M12 2C12 2 14 6 18 6C18 10 12 14 12 14C12 14 6 10 6 6C10 6 12 2 12 2Z" fill="currentColor" fill-opacity="0.1"></path>
+                    <path d="M12 14C12 14 15 17 15 21C11 21 12 14 12 14Z"></path>
+                    <path d="M12 14C12 14 9 17 9 21C13 21 12 14 12 14Z"></path>
                 </svg>
-
             </div>
 
-
-            <!-- Islamic Blessing -->
-
-            <div
-                class="fade-in max-w-xl mx-auto"
-                style="animation-delay: 0.2s;"
-            >
-
-                <p
-                    class="uppercase tracking-[0.15em] md:tracking-[0.25em] text-[9px] md:text-xs mb-7 md:mb-9 font-medium leading-loose"
-                >
-
-                    <span class="text-[#D6BD82]">
-                        ‘In the Name of Allah, the Most Merciful’
-                    </span>
-
-                    <br>
-
-                    <span
-                        class="text-[#c2a878] italic normal-case font-serif text-sm md:text-base"
-                    >
-                        “And We created you in pairs”
-                    </span>
-
+<!-- Pre-title -->
+            <div class="fade-in max-w-lg mx-auto" style="animation-delay: 0.2s;">
+                <p class="uppercase tracking-[0.15em] md:tracking-[0.25em] text-[9px] md:text-xs text-gray-400 mb-6 md:mb-10 font-medium leading-loose">
+                 <span class="text-[#6495ed]">   ‘In the Name of Allah the most Merciful’</span>
+ <br>
+                    <span class="text-[#c2a878]"><i>‘‘And We created you in pairs’’</i></span>
                 </p>
-
             </div>
 
-
-            <!-- Family -->
-
-            <div
-                class="fade-in max-w-xl mx-auto"
-                style="animation-delay: 0.3s;"
-            >
-
-                <p
-                    class="uppercase tracking-[0.15em] md:tracking-[0.22em] text-[9px] md:text-xs mb-7 md:mb-10 font-medium leading-loose"
-                >
-
-                    <span
-                        class="font-serif normal-case tracking-[0.08em] text-2xl md:text-3xl text-[#D6BD82]"
-                    >
-                        Sandhu Family
-                    </span>
-
-                    <br><br>
-
-                    <span class="text-[#c2a878]">
-                        Request the pleasure of your company
-                        <br class="hidden sm:block">
-                        at the wedding ceremony of their
-                        <br class="hidden sm:block">
-                        Dearest Daughter
-                    </span>
-
-                </p>
-
-            </div>
-
-
-            <!-- Couple -->
-
-            <div
-                class="fade-in flex flex-col items-center"
-                style="animation-delay: 0.4s;"
-            >
-
-                <h1
-                    class="font-['Allura'] text-5xl sm:text-6xl md:text-8xl text-[#D6BD82] leading-none"
-                >
+            <!-- Pre-title -->
+           <div class="fade-in max-w-lg mx-auto" style="animation-delay: 0.2s;">
+    <p class="uppercase tracking-[0.15em] md:tracking-[0.25em] text-[9px] md:text-xs text-gray-400 mb-6 md:mb-10 font-medium leading-loose">
+        <span class="text-[20px] md:text-sm" style="color:#6495ed">
+            Sandhu Family
+        </span>
+        <br>
+        <span class="text-[#c2a878]">
+            request the pleasure of your company at the wedding ceremony of their beloved Son
+        </span>
+    </p>
+</div>
+            <div class="fade-in flex flex-col items-center space-y-2 md:space-y-6" style="animation-delay: 0.4s;">
+                <h1 class="font-serif text-3xl sm:text-4xl md:text-6xl text-[#1a1a1a] tracking-[0.1em] font-light">
                     Noor-Ul-Izza
                 </h1>
-
-
-                <div
-                    class="flex items-center gap-3 md:gap-5 my-3 md:my-5"
-                >
-
-                    <div
-                        class="h-[1px] w-10 md:w-24 bg-[#c2a878]/40"
-                    ></div>
-
-                    <span
-                        class="font-['Allura'] text-3xl md:text-4xl text-[#c2a878]"
-                    >
-                        with
-                    </span>
-
-                    <div
-                        class="h-[1px] w-10 md:w-24 bg-[#c2a878]/40"
-                    ></div>
-
+                
+                <div class="flex items-center gap-2 md:gap-4 w-full justify-center">
+                    <div class="h-[1px] w-8 md:w-24 bg-[#c2a878]/30"></div>
+                    <span class="font-serif italic text-xl md:text-3xl text-[#c2a878]">with</span>
+                    <div class="h-[1px] w-8 md:w-24 bg-[#c2a878]/30"></div>
                 </div>
 
-
-                <h2
-                    class="font-['Allura'] text-5xl sm:text-6xl md:text-8xl text-[#D6BD82] leading-none"
-                >
-                    Talha Gondal
-                </h2>
-
+                <div class="flex flex-col items-center">
+                    <span class="uppercase tracking-[0.2em] md:tracking-[0.3em] text-lg md:text-xl text-gray-400 mb-1 md:mb-2"></span>
+                    <h1 class="font-serif text-2xl sm:text-3xl md:text-5xl text-[#1a1a1a] tracking-[0.1em] font-light">
+                        Talha Gondal
+                    </h1>
+                </div>
             </div>
 
-
-            <!-- Date -->
-
-            <div
-                class="fade-in mt-8 mb-8 md:mt-12 md:mb-12"
-                style="animation-delay: 0.6s;"
-            >
-
-                <p
-                    class="uppercase tracking-[0.22em] md:tracking-[0.35em] text-[10px] md:text-xs text-[#D6BD82]"
-                >
-                    Sunday
-                    <span class="text-[#c2a878] mx-2">•</span>
-                    November 22
-                    <span class="text-[#c2a878] mx-2">•</span>
-                    2026
+            <!-- Divider & Date -->
+            <div class="fade-in mt-6 mb-6 md:mt-12 md:mb-12" style="animation-delay: 0.6s;">
+                <p class="uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] md:text-xs text-[#1a1a1a] font-medium">
+                Sun, Nov<span class="text-[#c2a878] mx-1 md:mx-2">22,</span>2026
                 </p>
-
             </div>
-
-
-            <!-- Open Button -->
-
-            <div
-                class="fade-in"
-                style="animation-delay: 0.8s;"
-            >
-
-                <button
-                    id="enter-btn"
-                    type="button"
-                    class="group relative overflow-hidden border border-[#C2A878] bg-black/80 px-9 md:px-12 py-4 text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#D6BD82] transition-all duration-500 hover:bg-[#C2A878] hover:text-black hover:shadow-[0_0_30px_rgba(194,168,120,0.35)]"
-                >
-
-                    <span
-                        class="absolute inset-0 bg-[#D6BD82]/10 translate-y-full transition-transform duration-500 group-hover:translate-y-0"
-                    ></span>
-
-                    <span
-                        class="relative z-10 flex items-center justify-center gap-3"
-                    >
-
-                        <i
-                            class="ph-light ph-envelope-open text-lg"
-                        ></i>
-
+            
+            <!-- Elegant Glowing Button -->
+            <div class="fade-in mt-2 md:mt-4" style="animation-delay: 0.8s;">
+                <button id="enter-btn" class="group relative overflow-hidden rounded-none border border-[#c2a878]/50 px-8 md:px-12 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-[0.2em] text-[#1a1a1a] bg-white transition-all duration-700 hover:border-[#c2a878] hover:shadow-[0_0_20px_rgba(194,168,120,0.15)] animate-[pulse_4s_ease-in-out_infinite]">
+                    
+                    <!-- Hover Sweep Effect -->
+                    <span class="absolute inset-0 bg-[#c2a878]/5 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0"></span>
+                    
+                    <span class="relative flex items-center gap-2 md:gap-3 transition-colors duration-500">
+                        <i class="ph-light ph-envelope-open text-base md:text-lg text-[#c2a878]"></i>
                         Open Invitation
-
                     </span>
-
                 </button>
-
             </div>
-
+            
         </div>
-
     </div>
-
 </div>
 
 
@@ -1373,7 +1223,7 @@
     <p
         class="uppercase tracking-widest text-xs text-gray-400"
     >
-        Noor With Talha 
+        Noor With Talha Gondal
     </p>
 
 </footer>
