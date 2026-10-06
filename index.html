@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
+<html lang="en" class="scroll-smooth"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light">
-<meta name="supported-color-schemes" content="light">
+
     <title>Noor-Ul-Izza &amp; Talha Gondal | Nikkah Invitation</title>
 
     <meta
@@ -49,106 +46,49 @@
         content="https://taimoorsandhu1.github.io/Izza-and-Talha-Nikkah-Invitation/main.png"
     >
 
-    <!-- Favicon -->
-    <link
-        rel="icon"
-        type="image/png"
-        href="imgi_22_swans-framed-ByH4RE7t.png"
-    >
+    
 
-    <!-- Preload Opening Background -->
-    <link
-        rel="preload"
-        as="image"
-        href="mainbgcard.jpg"
-        type="image/webp"
-        fetchpriority="high"
-    >
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- Tailwind CSS -->
+    
+    <link rel="icon" type="image/png" href="imgi_22_swans-framed-ByH4RE7t.png">
+    
+    
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/thin/style.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/light/style.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: "#bba171",
-                        dark: "#1a1a1a",
-                        light: "#faf9f7",
-                        surface: "#ffffff"
+                        primary: '#bba171', /* Elegant Gold */
+                        dark: '#1a1a1a',    /* Charcoal */
+                        light: '#faf9f7',   /* Off-white */
+                        surface: '#ffffff',
                     },
-
                     fontFamily: {
-                        serif: ['"Playfair Display"', "serif"],
-                        sans: ["Lato", "sans-serif"]
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
                     }
                 }
             }
-        };
+        }
     </script>
-
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
     <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        body {
-            background: #faf9f7;
-        }
-
-        /* =====================================================
-           OPENING SCREEN
-        ====================================================== */
-
-        #entrance-screen {
-            min-height: 100vh;
-            min-height: 100svh;
-
-            background-image:
-                linear-gradient(
-                    rgba(0, 0, 0, 0.18),
-                    rgba(0, 0, 0, 0.18)
-                ),
-                url("mainbgcard.jpg");
-
-            background-size: cover;
+        /* Parallax Hero Background */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop');
+            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: #050505;
+            background-size: cover;
         }
-
-        .invitation-card {
-            background:
-                radial-gradient(
-                    circle at center,
-                    rgba(40, 35, 22, 0.15),
-                    rgba(0, 0, 0, 0.97) 70%
-                );
-
-            border: 1px solid rgba(194, 168, 120, 0.5);
-
-            box-shadow:
-                0 30px 80px rgba(0, 0, 0, 0.7),
-                inset 0 0 80px rgba(194, 168, 120, 0.035);
-        }
-
-        .gold-text {
+                .gold-text {
             color: #d6bd82;
         }
 
@@ -185,93 +125,25 @@
                 0 1px 3px rgba(0, 0, 0, 0.95),
                 0 3px 12px rgba(0, 0, 0, 0.75);
         }
-
-        /* =====================================================
-           ANIMATIONS
-        ====================================================== */
-
+        /* Fade In Animation */
         .fade-in {
+            animation: fadeIn 2s ease-out forwards;
             opacity: 0;
-            animation: fadeIn 1.5s ease-out forwards;
         }
-
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Subtle spin for the music icon when playing */
         .spin-slow {
             animation: spin 4s linear infinite;
         }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* =====================================================
-           MUSIC BUTTON
-        ====================================================== */
-
-        #music-control {
-            width: 58px;
-            height: 58px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* =====================================================
-           MOBILE
-        ====================================================== */
-
-        @media (max-width: 640px) {
-
-            #entrance-screen {
-                padding: 14px;
-                background-position: center top;
-            }
-
-            .invitation-card {
-                min-height: calc(100svh - 28px);
-            }
-
-            #music-control {
-                right: 18px;
-                bottom: 18px;
-
-                width: 54px;
-                height: 54px;
-            }
-
-            .hero-small-text {
-                letter-spacing: 0.22em !important;
-                line-height: 1.8;
-            }
-        }
     </style>
-</head>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Lato, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.inset-3{inset:0.75rem}.inset-4{inset:1rem}.bottom-1\/4{bottom:25%}.bottom-10{bottom:2.5rem}.bottom-3{bottom:0.75rem}.bottom-6{bottom:1.5rem}.left-1\/2{left:50%}.left-1\/4{left:25%}.left-3{left:0.75rem}.right-1\/4{right:25%}.right-3{right:0.75rem}.right-6{right:1.5rem}.top-1\/2{top:50%}.top-1\/4{top:25%}.top-3{top:0.75rem}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.z-\[100\]{z-index:100}.mx-1{margin-left:0.25rem;margin-right:0.25rem}.mx-auto{margin-left:auto;margin-right:auto}.my-12{margin-top:3rem;margin-bottom:3rem}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:0.25rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-auto{margin-top:auto}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-24{height:6rem}.h-32{height:8rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-96{height:24rem}.h-\[1px\]{height:1px}.h-full{height:100%}.h-screen{height:100vh}.w-12{width:3rem}.w-16{width:4rem}.w-24{width:6rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-96{width:24rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-grow{flex-grow:1}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-full{--tw-translate-y:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-150{--tw-scale-x:1.5;--tw-scale-y:1.5;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-\[pulse_4s_ease-in-out_infinite\]{animation:pulse 4s ease-in-out infinite}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-px{gap:1px}.space-y-16 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded-full{border-radius:9999px}.rounded-none{border-radius:0px}.rounded-sm{border-radius:0.125rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-\[\#c2a878\]{--tw-border-opacity:1;border-color:rgb(194 168 120 / var(--tw-border-opacity, 1))}.border-\[\#c2a878\]\/10{border-color:rgb(194 168 120 / 0.1)}.border-\[\#c2a878\]\/30{border-color:rgb(194 168 120 / 0.3)}.border-\[\#c2a878\]\/40{border-color:rgb(194 168 120 / 0.4)}.border-\[\#c2a878\]\/50{border-color:rgb(194 168 120 / 0.5)}.border-dark{--tw-border-opacity:1;border-color:rgb(26 26 26 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-100\/50{border-color:rgb(243 244 246 / 0.5)}.border-primary\/20{border-color:rgb(187 161 113 / 0.2)}.bg-light{--tw-bg-opacity:1;background-color:rgb(250 249 247 / var(--tw-bg-opacity, 1))}.bg-\[\#c2a878\]\/10{background-color:rgb(194 168 120 / 0.1)}.bg-\[\#c2a878\]\/30{background-color:rgb(194 168 120 / 0.3)}.bg-\[\#c2a878\]\/5{background-color:rgb(194 168 120 / 0.05)}.bg-\[\#faf9f7\]{--tw-bg-opacity:1;background-color:rgb(250 249 247 / var(--tw-bg-opacity, 1))}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-dark{--tw-bg-opacity:1;background-color:rgb(26 26 26 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(187 161 113 / var(--tw-bg-opacity, 1))}.bg-primary\/10{background-color:rgb(187 161 113 / 0.1)}.bg-primary\/20{background-color:rgb(187 161 113 / 0.2)}.bg-primary\/30{background-color:rgb(187 161 113 / 0.3)}.bg-primary\/40{background-color:rgb(187 161 113 / 0.4)}.bg-surface{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-primary{--tw-gradient-to:rgb(187 161 113 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #bba171 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-28{padding-top:7rem;padding-bottom:7rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-4{padding-bottom:1rem}.text-center{text-align:center}.font-sans{font-family:Lato, sans-serif}.font-\[\'Allura\'\]{font-family:'Allura'}.font-\[\'Cinzel\'\]{font-family:'Cinzel'}.font-serif{font-family:"Playfair Display", serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[20px\]{font-size:20px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-loose{line-height:2}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-\[0\.15em\]{letter-spacing:0.15em}.tracking-\[0\.1em\]{letter-spacing:0.1em}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-normal{letter-spacing:0em}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-widest{letter-spacing:0.1em}.text-dark{--tw-text-opacity:1;color:rgb(26 26 26 / var(--tw-text-opacity, 1))}.text-\[\#1a1a1a\]{--tw-text-opacity:1;color:rgb(26 26 26 / var(--tw-text-opacity, 1))}.text-\[\#6495ed\]{--tw-text-opacity:1;color:rgb(100 149 237 / var(--tw-text-opacity, 1))}.text-\[\#c2a878\]{--tw-text-opacity:1;color:rgb(194 168 120 / var(--tw-text-opacity, 1))}.text-\[\#c2a878\]\/30{color:rgb(194 168 120 / 0.3)}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(187 161 113 / var(--tw-text-opacity, 1))}.text-primary\/30{color:rgb(187 161 113 / 0.3)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-75{opacity:0.75}.opacity-80{opacity:0.8}.opacity-90{opacity:0.9}.shadow-\[0_20px_60px_-15px_rgba\(0\2c 0\2c 0\2c 0\.05\)\]{--tw-shadow:0 20px 60px -15px rgba(0,0,0,0.05);--tw-shadow-colored:0 20px 60px -15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_35px_60px_-15px_rgba\(0\2c 0\2c 0\2c 0\.4\)\]{--tw-shadow:0 35px 60px -15px rgba(0,0,0,0.4);--tw-shadow-colored:0 35px 60px -15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[100px\]{--tw-blur:blur(100px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-md{--tw-drop-shadow:drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-sm{--tw-drop-shadow:drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-\[\#c2a878\]:hover{--tw-border-opacity:1;border-color:rgb(194 168 120 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#1f1f1f\]:hover{--tw-bg-opacity:1;background-color:rgb(31 31 31 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#c2a878\]:hover{--tw-bg-opacity:1;background-color:rgb(194 168 120 / var(--tw-bg-opacity, 1))}.hover\:bg-dark:hover{--tw-bg-opacity:1;background-color:rgb(26 26 26 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-\[0_0_20px_rgba\(194\2c 168\2c 120\2c 0\.15\)\]:hover{--tw-shadow:0 0 20px rgba(194,168,120,0.15);--tw-shadow-colored:0 0 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.group:hover .group-hover\:translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:p-6{padding:1.5rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}}@media (min-width: 768px){.md\:inset-6{inset:1.5rem}.md\:inset-8{inset:2rem}.md\:bottom-6{bottom:1.5rem}.md\:left-6{left:1.5rem}.md\:right-6{right:1.5rem}.md\:top-6{top:1.5rem}.md\:mx-2{margin-left:0.5rem;margin-right:0.5rem}.md\:mb-10{margin-bottom:2.5rem}.md\:mb-12{margin-bottom:3rem}.md\:mb-2{margin-bottom:0.5rem}.md\:mb-8{margin-bottom:2rem}.md\:mt-12{margin-top:3rem}.md\:mt-4{margin-top:1rem}.md\:inline-block{display:inline-block}.md\:h-10{height:2.5rem}.md\:h-12{height:3rem}.md\:h-28{height:7rem}.md\:h-40{height:10rem}.md\:w-10{width:2.5rem}.md\:w-12{width:3rem}.md\:w-24{width:6rem}.md\:grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:gap-12{gap:3rem}.md\:gap-3{gap:0.75rem}.md\:gap-4{gap:1rem}.md\:gap-8{gap:2rem}.md\:space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.md\:p-12{padding:3rem}.md\:p-16{padding:4rem}.md\:p-3{padding:0.75rem}.md\:px-12{padding-left:3rem;padding-right:3rem}.md\:px-16{padding-left:4rem;padding-right:4rem}.md\:py-12{padding-top:3rem;padding-bottom:3rem}.md\:py-4{padding-top:1rem;padding-bottom:1rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:text-xs{font-size:0.75rem;line-height:1rem}.md\:tracking-\[0\.25em\]{letter-spacing:0.25em}.md\:tracking-\[0\.3em\]{letter-spacing:0.3em}}@media (min-width: 1024px){.lg\:gap-12{gap:3rem}.lg\:p-12{padding:3rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-8xl{font-size:6rem;line-height:1}.lg\:text-9xl{font-size:8rem;line-height:1}}</style></head>
+<body class="bg-light text-dark font-sans antialiased overflow-hidden" id="body-container" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
 
-
-<body
-    id="body-container"
-    class="bg-light text-dark font-sans antialiased overflow-hidden"
->
-
-
-<!-- ============================================================
-     OPENING INVITATION SCREEN
-============================================================ -->
-
+    <!-- Entrance Screen -->
 <div id="entrance-screen" class="fixed inset-0 z-[100] bg-[#faf9f7] p-4 sm:p-6 md:p-12 overflow-y-auto flex items-center justify-center transition-opacity duration-1000 ease-in-out" style="background-image: url('mainbgcard.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     
     <!-- Removed h-full and added my-auto to ensure it centers and adapts to content height properly -->
@@ -302,7 +174,7 @@
 <!-- Pre-title -->
             <div class="fade-in max-w-lg mx-auto" style="animation-delay: 0.2s;">
                 <p class="uppercase tracking-[0.15em] md:tracking-[0.25em] text-[9px] md:text-xs text-gray-400 mb-6 md:mb-10 font-medium leading-loose">
-                 <span class="text-[#6495ed]">   ‘In the Name of Allah the most Merciful’</span>
+                 <span class="text-[#b08a45]">   ‘In the Name of Allah the most Merciful’</span>
  <br>
                     <span class="text-[#c2a878]"><i>‘‘And We created you in pairs’’</i></span>
                 </p>
@@ -311,18 +183,18 @@
             <!-- Pre-title -->
            <div class="fade-in max-w-lg mx-auto" style="animation-delay: 0.2s;">
     <p class="uppercase tracking-[0.15em] md:tracking-[0.25em] text-[9px] md:text-xs text-gray-400 mb-6 md:mb-10 font-medium leading-loose">
-        <span class="text-[20px] md:text-sm" style="color:#6495ed">
+        <span class="text-[20px] md:text-sm" style="color:#b08a45">
             Sandhu Family
         </span>
         <br>
         <span class="text-[#c2a878]">
-            request the pleasure of your company at the wedding ceremony of their beloved Son
+            request the pleasure of your company at the wedding ceremony of their beloved Daughter
         </span>
     </p>
 </div>
             <div class="fade-in flex flex-col items-center space-y-2 md:space-y-6" style="animation-delay: 0.4s;">
                 <h1 class="font-serif text-3xl sm:text-4xl md:text-6xl text-[#1a1a1a] tracking-[0.1em] font-light">
-                    Noor-Ul-Izza
+                    Capt Dr. Noor-Ul-Izza
                 </h1>
                 
                 <div class="flex items-center gap-2 md:gap-4 w-full justify-center">
@@ -364,53 +236,17 @@
     </div>
 </div>
 
+    <audio id="bg-music" loop="">
+        <source src="wedding-background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-control" class="fixed bottom-6 right-6 z-50 bg-white/90 backdrop-blur-md p-4 rounded-full shadow-lg border border-gray-100 text-primary hover:scale-105 transition-all duration-300 opacity-0 pointer-events-none">
+        <i id="music-icon" class="ph-fill ph-record text-3xl spin-slow"></i>
+    </button>
 
 
-<!-- ============================================================
-     BACKGROUND MUSIC
-============================================================ -->
-
-<audio
-    id="bg-music"
-    loop
-    preload="none"
->
-    <source
-        src="wedding-background-music.mp3"
-        type="audio/mpeg"
-    >
-</audio>
-
-
-
-<!-- Music Control -->
-
-<button
-    id="music-control"
-    type="button"
-    aria-label="Toggle background music"
-    class="fixed bottom-6 right-6 z-50 bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-gray-100 text-primary hover:scale-105 transition-all duration-300 opacity-0 pointer-events-none"
->
-
-    <i
-        id="music-icon"
-        class="ph-fill ph-record text-3xl spin-slow"
-    ></i>
-
-</button>
-
-
-
-<!-- ============================================================
-     HERO
-============================================================ -->
-
-<section
-    class="relative h-screen min-h-[650px] flex flex-col items-center justify-center text-center px-4 overflow-hidden"
->
-
-    <!-- Background -->
-
+    <section class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <div class="absolute inset-0 z-0">
     <div class="absolute inset-0 z-0">
 
         <img
@@ -425,640 +261,262 @@
         ></div>
 
     </div>
+    </div>
 
-
-    <!-- Hero Text -->
-
-    <div
-        class="relative z-20 max-w-4xl mx-auto"
-    >
-
-        <p
-            class="hero-small-text uppercase tracking-[0.4em] mb-8 text-xs md:text-sm font-light max-w-3xl mx-auto"
-        >
-            We Cordially Invite Your Esteemed Presence
-            <br class="hidden md:block">
-            At The Wedding Ceremony Of
+    <div class="relative z-20 max-w-4xl mx-auto drop-shadow-md">
+        <p class="text-white/80 uppercase tracking-[0.4em] mb-4 text-xs md:text-sm font-light">
+            We Cordially invite your esteemed presence at wedding ceremony of
         </p>
+        
+        
+            
+<!-- Google Fonts Import (Add this to your HTML <head>) -->
+<link href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Cinzel:wght@300;400&amp;display=swap" rel="stylesheet">
+
+<!-- Wedding Card Typography Block -->
+<div class="text-center text-white py-8 px-4">
+    <!-- Groom Title -->
+
+    
+    <!-- Fully Connected Script Name -->
+    <h1 class="font-['Allura'] text-6xl md:text-8xl lg:text-9xl text-primary leading-none tracking-normal drop-shadow-sm">
+        Noor-Ul-Izza
+    </h1>
+    
+    <!-- Joint Ampersand Style -->
+    <div class="my-3 flex items-center justify-center gap-4">
+        <div class="h-[1px] w-12 bg-primary/40"></div>
+        <span class="font-['Allura'] text-4xl md:text-5xl text-white italic">&amp;</span>
+        <div class="h-[1px] w-12 bg-primary/40"></div>
+    </div>
+    
+    <!-- Bride Family Title -->
+    <p class="font-['Cinzel'] font-light text-xs md:text-sm tracking-[0.3em] text-gray-300 uppercase mb-1">
+         </p>
+    
+    <!-- Fully Connected Script Name -->
+    <h2 class="font-['Allura'] text-5xl md:text-7xl lg:text-8xl text-primary leading-none tracking-normal drop-shadow-sm">
+        Talha Gondal
+    </h2>
+</div>
+        
+        <div class="w-16 h-[1px] bg-primary mx-auto my-6 opacity-75"></div>
+        
+        <p class="text-white/90 uppercase tracking-[0.2em] text-sm md:text-base font-light">
+           Sun, Nov 22, 2026
+        </p>
+    </div>
+    
+    <div class="absolute bottom-10 animate-bounce text-white/70 z-20">
+        <i class="ph ph-caret-down text-3xl"></i>
+    </div>
+</section>
+
+    
 
 
-        <div class="text-center text-white px-4">
 
-            <h1
-                class="hero-name font-['Allura'] text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-none"
-            >
-                Noor-Ul-Izza
-            </h1>
+    <section class="py-20 bg-light text-center px-4">
+        <section class="relative py-20 bg-light border-t border-gray-100/50">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img src="imgi_6_floral-vase-6x28LN74.png" class="h-32 md:h-40 object-contain  opacity-80" alt="Wedding Celebration Icon">
+    </div>
 
-
-            <div
-                class="my-4 md:my-6 flex items-center justify-center gap-4"
-            >
-
-                <div
-                    class="h-[1px] w-12 md:w-20 bg-primary/60"
-                ></div>
-
-                <span
-                    class="font-['Allura'] text-4xl md:text-5xl text-white"
-                >
-                    &amp;
-                </span>
-
-                <div
-                    class="h-[1px] w-12 md:w-20 bg-primary/60"
-                ></div>
-
-            </div>
-
-
-            <h2
-                class="hero-name font-['Allura'] text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-none"
-            >
-                Talha Gondal
+</section>
+        <div class="max-w-3xl mx-auto">
+            <i class="ph-fill ph-quotes text-4xl text-primary/30 mb-6"></i>
+            <h2 class="font-serif italic text-2xl md:text-3xl leading-relaxed text-gray-700">
+                "And we created you in pairs."
             </h2>
-
+            <p class="mt-6 uppercase tracking-widest text-xs text-gray-400">Surah An-Naba (78:8)</p>
         </div>
+    </section>
 
 
-        <div
-            class="w-20 h-[1px] bg-primary mx-auto my-8 opacity-90"
-        ></div>
 
 
-        <p
-            class="hero-small-text uppercase tracking-[0.25em] text-sm md:text-base font-light"
-        >
-            Sun, Nov 22, 2026
-        </p>
-
+    <section class="relative py-28 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="white-textured-paper-KasY8RAJ.png" class="w-full h-full object-cover" alt="Wedding Decor">
+        
     </div>
 
-
-    <!-- Scroll Arrow -->
-
-    <div
-        class="absolute bottom-8 animate-bounce text-white/80 z-20"
-    >
-
-        <i
-            class="ph ph-caret-down text-3xl"
-        ></i>
-
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <h2 class="font-serif italic text-5xl md:text-7xl leading-relaxed text-primary">Countdown</h2>
+        <p class="mt-6 uppercase tracking-widest text-xs text-gray-700">Until November 22, 2026</p>
+        
+        <div id="countdown" class="flex justify-center gap-6 md:gap-12 font-serif">
+            <div class="flex flex-col items-center">
+                <span id="days" class="text-4xl md:text-7xl text-primary mb-2 ">25</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Days</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="hours" class="text-4xl md:text-7xl text-primary mb-2 ">16</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Hrs</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="minutes" class="text-4xl md:text-7xl text-primary mb-2 ">24</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Mins</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="seconds" class="text-4xl md:text-7xl text-primary mb-2 ">02</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Secs</span>
+            </div>
+        </div>
     </div>
-
 </section>
 
 
 
-<!-- ============================================================
-     QURAN VERSE
-============================================================ -->
-
-<section
-    class="py-20 md:py-28 bg-light text-center px-4"
->
-
-    <div class="relative h-40 mb-8">
-
-        <img
-            src="imgi_6_floral-vase-6x28LN74.png"
-            class="h-32 md:h-40 object-contain opacity-80 mx-auto"
-            alt="Wedding floral decoration"
-            loading="lazy"
-        >
-
-    </div>
-
-
-    <div class="max-w-3xl mx-auto">
-
-        <i
-            class="ph-fill ph-quotes text-4xl text-primary/30 mb-6"
-        ></i>
-
-
-        <h2
-            class="font-serif italic text-2xl md:text-3xl leading-relaxed text-gray-700"
-        >
-            “And We created you in pairs.”
-        </h2>
-
-
-        <p
-            class="mt-6 uppercase tracking-widest text-xs text-gray-400"
-        >
-            Surah An-Naba (78:8)
-        </p>
-
+    <section class="py-24 bg-light">
+        <section class="relative py-20 bg-light border-t border-gray-100/50">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img src="imgi_7_venue-hedsor-DSq2yQw3.png" class="h-32 md:h-40 object-contain  opacity-80" alt="Wedding Celebration Icon">
     </div>
 
 </section>
-
-
-
-<!-- ============================================================
-     COUNTDOWN
-============================================================ -->
-
-<section
-    class="relative py-28 overflow-hidden"
->
-
-    <div
-        class="absolute inset-0 z-0"
-    >
-
-        <img
-            src="white-textured-paper-KasY8RAJ.png"
-            class="w-full h-full object-cover"
-            alt=""
-            loading="lazy"
-        >
-
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+        <h2 class="font-serif text-3xl md:text-4xl uppercase tracking-widest mb-4">When &amp; Where</h2>
+        <div class="w-16 h-[1px] bg-primary mx-auto"></div>
     </div>
 
+    <!-- Responsive Grid: 1 column on mobile, 3 columns on tablet/desktop -->
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-8 lg:gap-12 items-stretch">
+        
 
-    <div
-        class="max-w-4xl mx-auto px-4 text-center relative z-10"
-    >
+        
+        <!-- CARD : WALIMA -->
+       <div class="flex justify-center w-full">
+    <div class="bg-surface p-8 lg:p-12 text-center shadow-sm border border-gray-100 flex flex-col h-full w-full max-w-lg mx-auto transition-transform hover:-translate-y-1 duration-300">
+        
+        <!-- Updated icon for Walima -->
+        <i class="ph-light ph-sparkle text-5xl text-primary mb-6 mx-auto"></i>
 
-        <h2
-            class="font-serif italic text-5xl md:text-7xl leading-relaxed text-primary"
-        >
-            Countdown
-        </h2>
+        <h3 class="font-serif text-2xl uppercase tracking-widest mb-2">
+            Nikkah
+        </h3>
 
-
-        <p
-            class="mt-4 mb-12 uppercase tracking-widest text-xs text-gray-700"
-        >
-            Until November 22, 2026
+        <p class="text-gray-500 mb-6 font-serif italic">
+            22-Nov-2026 | 5:00 PM - 8:00 PM
         </p>
 
+        <div class="flex-grow">
+            <p class="font-bold text-lg mb-2">
+                GarriDaughter Officers Mess
+            </p>
 
-        <div
-            id="countdown"
-            class="grid grid-cols-4 gap-3 sm:gap-6 md:gap-12 font-serif"
-        >
-
-            <!-- Days -->
-
-            <div class="flex flex-col items-center">
-
-                <span
-                    id="days"
-                    class="text-3xl sm:text-4xl md:text-7xl text-primary mb-2"
-                >
-                    00
-                </span>
-
-                <span
-                    class="text-[9px] sm:text-xs uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-700 font-sans"
-                >
-                    Days
-                </span>
-
-            </div>
-
-
-            <!-- Hours -->
-
-            <div class="flex flex-col items-center">
-
-                <span
-                    id="hours"
-                    class="text-3xl sm:text-4xl md:text-7xl text-primary mb-2"
-                >
-                    00
-                </span>
-
-                <span
-                    class="text-[9px] sm:text-xs uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-700 font-sans"
-                >
-                    Hrs
-                </span>
-
-            </div>
-
-
-            <!-- Minutes -->
-
-            <div class="flex flex-col items-center">
-
-                <span
-                    id="minutes"
-                    class="text-3xl sm:text-4xl md:text-7xl text-primary mb-2"
-                >
-                    00
-                </span>
-
-                <span
-                    class="text-[9px] sm:text-xs uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-700 font-sans"
-                >
-                    Mins
-                </span>
-
-            </div>
-
-
-            <!-- Seconds -->
-
-            <div class="flex flex-col items-center">
-
-                <span
-                    id="seconds"
-                    class="text-3xl sm:text-4xl md:text-7xl text-primary mb-2"
-                >
-                    00
-                </span>
-
-                <span
-                    class="text-[9px] sm:text-xs uppercase tracking-[0.15em] md:tracking-[0.2em] text-gray-700 font-sans"
-                >
-                    Secs
-                </span>
-
-            </div>
-
+            <p class="text-gray-500 text-sm leading-relaxed mb-8">
+                Saddar, Rawalpindi <br>Pakistan
+            </p>
         </div>
 
+        <a href="https://maps.app.goo.gl/rzZCvGVNj6tKJbxZA" target="_blank" class="inline-block border border-dark px-6 py-3 text-xs uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300 mt-auto">
+            View on Map
+        </a>
     </div>
+</div>
 
-</section>
-
-
-
-<!-- ============================================================
-     WHEN & WHERE
-============================================================ -->
-
-<section
-    class="py-24 bg-light"
->
-
-    <!-- Venue Decoration -->
-
-    <div
-        class="relative h-40 mb-8"
-    >
-
-        <img
-            src="imgi_7_venue-hedsor-DSq2yQw3.png"
-            class="h-32 md:h-40 object-contain opacity-80 mx-auto"
-            alt="Wedding venue decoration"
-            loading="lazy"
-        >
-
+    
+        
     </div>
+</div>
+    </section>
 
 
-    <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-    >
 
-        <div
-            class="text-center mb-16"
-        >
 
-            <h2
-                class="font-serif text-3xl md:text-4xl uppercase tracking-widest mb-4"
-            >
-                When &amp; Where
-            </h2>
 
-            <div
-                class="w-16 h-[1px] bg-primary mx-auto"
-            ></div>
-
+<section class="py-24 bg-dark text-white overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <div class="flex justify-center mb-12">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-primary/10 blur-3xl rounded-full scale-150"></div>
+                    <img src="imgi_8_champagne-tower-Or6MBjHQ.png" class="h-24 md:h-28 object-contain relative z-10 opacity-90" alt="Celebration Icon">
+                </div>
+            </div>
+            <h2 class="font-serif text-4xl md:text-6xl mb-4 tracking-tight">The Programme</h2>
+            <p class="text-primary uppercase tracking-[0.4em] text-[10px] md:text-xs">Schedule of Events</p>
+            <div class="mt-8 flex justify-center">
+                <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+            </div>
         </div>
 
-
-        <!-- Venue Card -->
-
-        <div
-            class="flex justify-center w-full"
-        >
-
-            <div
-                class="bg-surface p-8 lg:p-12 text-center shadow-sm border border-gray-100 flex flex-col w-full max-w-lg mx-auto transition-transform hover:-translate-y-1 duration-300"
-            >
-
-                <i
-                    class="ph-light ph-sparkle text-5xl text-primary mb-6 mx-auto"
-                ></i>
-
-
-                <h3
-                    class="font-serif text-2xl uppercase tracking-widest mb-2"
-                >
-                    Nikkah
-                </h3>
-
-
-                <p
-                    class="text-gray-500 mb-6 font-serif italic"
-                >
-                    22-Nov-2026 | 5:00 PM - 8:00 PM
-                </p>
-
-
-                <div class="flex-grow">
-
-                    <p
-                        class="font-bold text-lg mb-2"
-                    >
-                        Garrison Officers Mess
-                    </p>
-
-
-                    <p
-                        class="text-gray-500 text-sm leading-relaxed mb-8"
-                    >
-                        Saddar, Rawalpindi
-                        <br>
-                        Pakistan
-                    </p>
-
+        <!-- Event Schedules Stack -->
+        <div class="space-y-16">
+            
+           
+              <!-- Day : Waleema -->
+            <div>
+                <div class="text-center mb-8">
+                    <h3 class="font-serif text-3xl text-white mb-2">Nikkah</h3>
+                    <p class="text-gray-400 font-serif italic text-sm">Sunday, November 22, 2026</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-primary/20 border border-primary/20">
+                    <div class="bg-dark p-10 flex flex-col items-center text-center transition-colors duration-500 hover:bg-[#1f1f1f]">
+                        <span class="text-primary font-serif italic text-lg mb-4">05:30 PM</span>
+                        <div class="w-8 h-[1px] bg-primary/30 mb-6"></div>
+                        <h4 class="uppercase tracking-[0.2em] text-sm font-light leading-relaxed">Nikkah</h4>
+                    </div>
+                    <div class="bg-dark p-10 flex flex-col items-center text-center transition-colors duration-500 hover:bg-[#1f1f1f]">
+                        <span class="text-primary font-serif italic text-lg mb-4">06:30 PM</span>
+                        <div class="w-8 h-[1px] bg-primary/30 mb-6"></div>
+                        <h4 class="uppercase tracking-[0.2em] text-sm font-light leading-relaxed">Dinner</h4>
+                    </div>
+                    
                 </div>
 
-
-                <a
-                    href="https://maps.app.goo.gl/rzZCvGVNj6tKJbxZA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-block border border-dark px-6 py-3 text-xs uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300 mt-auto"
-                >
-                    View on Map
-                </a>
-
+         
             </div>
 
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-16 text-center">
+            <p class="text-gray-500 font-serif italic text-sm">We look forward to celebrating with you over these three joyous days.</p>
         </div>
 
     </div>
-
 </section>
 
-
-
-<!-- ============================================================
-     PROGRAMME
-============================================================ -->
-
-<section
-    class="py-24 bg-dark text-white overflow-hidden"
->
-
-    <div
-        class="max-w-5xl mx-auto px-6"
-    >
-
-        <!-- Programme Heading -->
-
-        <div
-            class="text-center mb-16"
-        >
-
-            <div
-                class="flex justify-center mb-12"
-            >
-
-                <div class="relative">
-
-                    <div
-                        class="absolute inset-0 bg-primary/10 blur-3xl rounded-full scale-150"
-                    ></div>
-
-                    <img
-                        src="imgi_8_champagne-tower-Or6MBjHQ.png"
-                        class="h-24 md:h-28 object-contain relative z-10 opacity-90"
-                        alt="Celebration decoration"
-                        loading="lazy"
-                    >
-
-                </div>
-
-            </div>
-
-
-            <h2
-                class="font-serif text-4xl md:text-6xl mb-4 tracking-tight"
-            >
-                The Programme
-            </h2>
-
-
-            <p
-                class="text-primary uppercase tracking-[0.4em] text-[10px] md:text-xs"
-            >
-                Schedule of Events
-            </p>
-
-
-            <div
-                class="mt-8 flex justify-center"
-            >
-
-                <div
-                    class="h-[1px] w-24 bg-gradient-to-r from-transparent via-primary to-transparent"
-                ></div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Date -->
-
-        <div
-            class="text-center mb-8"
-        >
-
-            <h3
-                class="font-serif text-3xl text-white mb-2"
-            >
-                Nikkah
-            </h3>
-
-
-            <p
-                class="text-gray-400 font-serif italic text-sm"
-            >
-                Sunday, November 22, 2026
-            </p>
-
-        </div>
-
-
-        <!-- Schedule -->
-
-        <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-px bg-primary/20 border border-primary/20"
-        >
-
-            <div
-                class="bg-dark p-10 flex flex-col items-center text-center transition-colors duration-500 hover:bg-[#1f1f1f]"
-            >
-
-                <span
-                    class="text-primary font-serif italic text-lg mb-4"
-                >
-                    05:00 PM
-                </span>
-
-
-                <div
-                    class="w-8 h-[1px] bg-primary/30 mb-6"
-                ></div>
-
-
-                <h4
-                    class="uppercase tracking-[0.2em] text-sm font-light leading-relaxed"
-                >
-                    Reception
-                </h4>
-
-            </div>
-
-
-            <div
-                class="bg-dark p-10 flex flex-col items-center text-center transition-colors duration-500 hover:bg-[#1f1f1f]"
-            >
-
-                <span
-                    class="text-primary font-serif italic text-lg mb-4"
-                >
-                    06:30 PM
-                </span>
-
-
-                <div
-                    class="w-8 h-[1px] bg-primary/30 mb-6"
-                ></div>
-
-
-                <h4
-                    class="uppercase tracking-[0.2em] text-sm font-light leading-relaxed"
-                >
-                    Dinner
-                </h4>
-
-            </div>
-
-        </div>
-
-
-        <div
-            class="mt-16 text-center"
-        >
-
-            <p
-                class="text-gray-500 font-serif italic text-sm"
-            >
-                We look forward to celebrating this joyous occasion with you.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ============================================================
-     RSVP
-============================================================ -->
-
-<section
-    class="py-32 bg-[#faf9f7] relative flex justify-center items-center overflow-hidden"
->
-
-    <!-- Background Glow -->
-
-    <div
-        class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c2a878]/10 rounded-full blur-[100px] pointer-events-none"
-    ></div>
-
-    <div
-        class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#c2a878]/10 rounded-full blur-[100px] pointer-events-none"
-    ></div>
-
-
-    <div
-        class="max-w-3xl w-full mx-auto px-4 relative z-10"
-    >
-
-        <div
-            class="bg-white p-2 md:p-3 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)]"
-        >
-
-            <div
-                class="border border-[#c2a878]/30 p-8 md:p-16 relative"
-            >
-
-                <!-- Decoration -->
-
-                <div
-                    class="flex justify-center mb-8"
-                >
-
-                    <svg
-                        class="w-16 h-16 text-[#c2a878] opacity-80"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="0.5"
-                    >
-
-                        <path
-                            d="M12 2C12 2 14 6 18 6C18 10 12 14 12 14C12 14 6 10 6 6C10 6 12 2 12 2Z"
-                            fill="currentColor"
-                            fill-opacity="0.1"
-                        ></path>
-
-                        <path
-                            d="M12 14C12 14 15 17 15 21C11 21 12 14 12 14Z"
-                        ></path>
-
-                        <path
-                            d="M12 14C12 14 9 17 9 21C13 21 12 14 12 14Z"
-                        ></path>
-
+    
+
+   
+
+ 
+
+    <section class="py-32 bg-[#faf9f7] relative flex justify-center items-center overflow-hidden">
+    
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c2a878]/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#c2a878]/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-3xl w-full mx-auto px-4 relative z-10">
+        
+        <div class="bg-white p-2 md:p-3 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] rounded-sm">
+            <div class="border border-[#c2a878]/30 p-8 md:p-16 relative">
+                
+                <!-- Decorative Icon -->
+                <div class="flex justify-center mb-8">
+                    <svg class="w-16 h-16 text-[#c2a878] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+                        <path d="M12 2C12 2 14 6 18 6C18 10 12 14 12 14C12 14 6 10 6 6C10 6 12 2 12 2Z" fill="currentColor" fill-opacity="0.1"></path>
+                        <path d="M12 14C12 14 15 17 15 21C11 21 12 14 12 14Z"></path>
+                        <path d="M12 14C12 14 9 17 9 21C13 21 12 14 12 14Z"></path>
                     </svg>
-
                 </div>
 
-
-                <!-- RSVP Heading -->
-
-                <div
-                    class="text-center mb-12"
-                >
-
-                    <h2
-                        class="font-serif text-4xl md:text-5xl uppercase tracking-[0.15em] mb-4 text-[#1a1a1a]"
-                    >
-                        RSVP
-                    </h2>
-
-
-                    <p
-                        class="text-[#c2a878] font-serif italic text-lg tracking-wide"
-                    >
-                        Awaiting your gracious presence
-                    </p>
-
+                <!-- Title -->
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl md:text-5xl uppercase tracking-[0.15em] mb-4 text-[#1a1a1a]">RSVP</h2>
+                    <p class="text-[#c2a878] font-serif italic text-lg tracking-wide">Awaiting your gracious presence</p>
                 </div>
 
-
-                <!-- RSVP Names -->
-
-                <div
-                    class="max-w-xl mx-auto text-center space-y-4 font-serif text-lg md:text-xl text-gray-700 leading-relaxed"
-                >
-
+                <!-- Names List -->
+                <div class="max-w-xl mx-auto text-center space-y-4 font-serif text-lg md:text-xl text-gray-700 leading-relaxed">
                     <p>Mr. and Mrs. Ilyas Bajwa</p>
 
                     <p>Mrs. Tariq Randhawa</p>
@@ -1074,449 +532,124 @@
                     <p>Capt. Dr. Taimoor Sandhu</p>
 
                     <p>Dr. Nibras Randhawa</p>
-
-
-                    <p
-                        class="text-[#c2a878] font-serif italic text-lg tracking-wide"
-                    >
-                        All Family Members &amp; Cousins
-                    </p>
-
+                    
+                    <p class="text-[#c2a878] font-serif italic text-lg tracking-wide">All Family Members &amp; cousins</p>
+        
                 </div>
 
-
-                <!-- Divider -->
-
-                <div
-                    class="flex justify-center my-12 relative max-w-md mx-auto"
-                >
-
-                    <div
-                        class="absolute inset-0 flex items-center"
-                    >
-
-                        <div
-                            class="w-full border-t border-[#c2a878]/30"
-                        ></div>
-
+                <!-- Elegant Divider -->
+                <div class="flex justify-center my-12 relative max-w-md mx-auto">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-[#c2a878]/30"></div>
                     </div>
-
-
-                    <div
-                        class="relative bg-white px-6 text-[#c2a878]"
-                    >
-
-                        <i
-                            class="ph-light ph-phone text-2xl"
-                        ></i>
-
+                    <div class="relative bg-white px-6 text-[#c2a878]">
+                        <i class="ph-light ph-phone text-2xl"></i>
                     </div>
-
                 </div>
 
-
-                <!-- Contact -->
-
-                <div
-                    class="text-center pb-4"
-                >
-
-                    <h3
-                        class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-6"
-                    >
-                        Contact For Details
-                    </h3>
-
-
-                    <div
-                        class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 font-serif text-xl text-[#1a1a1a]"
-                    >
-
-                        <!-- WhatsApp 1 -->
-
-                        <a
-                            href="https://wa.me/923357839221"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#c2a878]/40 bg-white shadow-sm hover:bg-[#c2a878] hover:text-white hover:border-[#c2a878] transition-all duration-300"
-                        >
-
-                            <i
-                                class="ph-fill ph-whatsapp-logo text-green-600 text-2xl group-hover:text-white"
-                            ></i>
-
-                            <span>
-                                0335-7839221
-                            </span>
-
-                        </a>
-
-
-                        <span
-                            class="hidden md:inline-block text-[#c2a878]/30"
-                        >
-                            |
-                        </span>
-
-
-                        <!-- WhatsApp 2 -->
-
-                        <a
-                            href="https://wa.me/923366545693"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#c2a878]/40 bg-white shadow-sm hover:bg-[#c2a878] hover:text-white hover:border-[#c2a878] transition-all duration-300"
-                        >
-
-                            <i
-                                class="ph-fill ph-whatsapp-logo text-green-600 text-2xl group-hover:text-white"
-                            ></i>
-
-                            <span>
-                                0336-6545693
-                            </span>
-
-                        </a>
-
-                    </div>
-
-                </div>
+                <!-- Contact Section -->
+                <div class="text-center pb-4">
+    <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-6">Contact For Details</h3>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 font-serif text-xl text-[#1a1a1a]">
+        <a href="https://wa.me/923357839221" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#c2a878]/40 bg-white shadow-sm hover:bg-[#c2a878] hover:text-white hover:border-[#c2a878] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current text-green-600 group-hover:text-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+            <span>0335-7839221</span>
+        </a>
+        <span class="hidden md:inline-block text-[#c2a878]/30">|</span>
+        <a href="https://wa.me/923366545693" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#c2a878]/40 bg-white shadow-sm hover:bg-[#c2a878] hover:text-white hover:border-[#c2a878] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current text-green-600 group-hover:text-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+            <span>0336-6545693</span>
+        </a>
+    </div>
+</div>
 
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 
 
-<!-- ============================================================
-     FOOTER
-============================================================ -->
-
-<footer
-    class="bg-dark py-16 text-center text-white"
->
-
-    <div
-        class="flex justify-center mb-8"
-    >
-
-        <img
-            src="imgi_22_swans-framed-ByH4RE7t.png"
-            class="h-32 md:h-40 object-contain opacity-80"
-            alt="N and T wedding emblem"
-            loading="lazy"
-        >
-
+    <footer class="bg-dark py-16 text-center text-white">
+        <section class="relative py-20 ">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img src="imgi_22_swans-framed-ByH4RE7t.png" class="h-32 md:h-40 object-contain  opacity-80" alt="Wedding Celebration Icon">
     </div>
 
+</section>
+        <h2 class="font-serif text-4xl mb-4 text-primary">N &amp; T</h2>
+        <p class="uppercase tracking-widest text-xs text-gray-400 mb-8">Noor With Talha</p>
+    </footer>
 
-    <h2
-        class="font-serif text-4xl mb-4 text-primary"
-    >
-        N &amp; T
-    </h2>
+    <script>
+        // 1. Loading Screen & Music Logic
+        const entranceScreen = document.getElementById('entrance-screen');
+        const enterBtn = document.getElementById('enter-btn');
+        const bodyContainer = document.getElementById('body-container');
+        const bgMusic = document.getElementById('bg-music');
+        const musicControl = document.getElementById('music-control');
+        const musicIcon = document.getElementById('music-icon');
+        let isPlaying = false;
 
+        // When "Open Invitation" is clicked
+        enterBtn.addEventListener('click', () => {
+            // Fade out the preloader
+            entranceScreen.style.opacity = '0';
+            
+            // Allow scrolling again
+            bodyContainer.classList.remove('overflow-hidden');
 
-    <p
-        class="uppercase tracking-widest text-xs text-gray-400"
-    >
-        Noor With Talha 
-    </p>
-
-</footer>
-
-
-
-<!-- ============================================================
-     JAVASCRIPT
-============================================================ -->
-
-<script>
-
-    /* =========================================================
-       ELEMENTS
-    ========================================================== */
-
-    const entranceScreen =
-        document.getElementById("entrance-screen");
-
-    const enterBtn =
-        document.getElementById("enter-btn");
-
-    const bodyContainer =
-        document.getElementById("body-container");
-
-    const bgMusic =
-        document.getElementById("bg-music");
-
-    const musicControl =
-        document.getElementById("music-control");
-
-    const musicIcon =
-        document.getElementById("music-icon");
-
-
-    let isPlaying = false;
-
-
-
-    /* =========================================================
-       OPEN INVITATION
-    ========================================================== */
-
-    enterBtn.addEventListener("click", async () => {
-
-        entranceScreen.style.opacity = "0";
-
-        bodyContainer.classList.remove(
-            "overflow-hidden"
-        );
-
-
-        /* Try playing music */
-
-        try {
-
-            await bgMusic.play();
-
+            // Play the audio
+            bgMusic.play();
             isPlaying = true;
 
-            musicIcon.className =
-                "ph-fill ph-record text-3xl spin-slow";
+            // Reveal the floating music button
+            musicControl.classList.remove('opacity-0', 'pointer-events-none');
 
-        }
+            // Remove entrance screen from DOM after fade animation completes
+            setTimeout(() => {
+                entranceScreen.style.display = 'none';
+            }, 1000);
+        });
 
-        catch (error) {
-
-            isPlaying = false;
-
-            musicIcon.className =
-                "ph-fill ph-speaker-slash text-3xl";
-
-        }
-
-
-        /* Show Music Control */
-
-        musicControl.classList.remove(
-            "opacity-0",
-            "pointer-events-none"
-        );
-
-
-        /* Remove entrance screen */
-
-        setTimeout(() => {
-
-            entranceScreen.style.display = "none";
-
-        }, 1000);
-
-    });
-
-
-
-    /* =========================================================
-       MUSIC TOGGLE
-    ========================================================== */
-
-    musicControl.addEventListener(
-        "click",
-        async () => {
-
+        // Toggle music play/pause
+        musicControl.addEventListener('click', () => {
             if (isPlaying) {
-
                 bgMusic.pause();
-
-                isPlaying = false;
-
-                musicIcon.className =
-                    "ph-fill ph-speaker-slash text-3xl";
-
+                musicIcon.classList.remove('spin-slow');
+                musicIcon.className = "ph-fill ph-speaker-slash text-3xl"; // Crossed out speaker icon
+            } else {
+                bgMusic.play();
+                musicIcon.className = "ph-fill ph-record text-3xl spin-slow"; // Spinning record icon
             }
+            isPlaying = !isPlaying;
+        });
 
-            else {
+        // 2. Countdown Logic
+        const countDownDate = new Date("Nov 22, 2026").getTime();
+        const countdownTimer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
 
-                try {
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                    await bgMusic.play();
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
 
-                    isPlaying = true;
-
-                    musicIcon.className =
-                        "ph-fill ph-record text-3xl spin-slow";
-
-                }
-
-                catch (error) {
-
-                    isPlaying = false;
-
-                    musicIcon.className =
-                        "ph-fill ph-speaker-slash text-3xl";
-
-                }
-
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.getElementById("countdown").innerHTML = "<div class='text-2xl font-serif text-primary'>Today is the day!</div>";
             }
-
-        }
-    );
-
-
-
-    /* =========================================================
-       COUNTDOWN
-
-       Wedding:
-       November 22, 2026
-       5:00 PM
-       Pakistan Standard Time
-    ========================================================== */
-
-    const countDownDate =
-        new Date(
-            "2026-11-22T17:00:00+05:00"
-        ).getTime();
-
-
-    const daysElement =
-        document.getElementById("days");
-
-    const hoursElement =
-        document.getElementById("hours");
-
-    const minutesElement =
-        document.getElementById("minutes");
-
-    const secondsElement =
-        document.getElementById("seconds");
-
-    const countdownElement =
-        document.getElementById("countdown");
-
-
-
-    function updateCountdown() {
-
-        const now =
-            new Date().getTime();
-
-
-        const distance =
-            countDownDate - now;
-
-
-
-        /* Wedding has arrived */
-
-        if (distance <= 0) {
-
-            countdownElement.innerHTML = `
-                <div
-                    class="col-span-4 text-2xl md:text-4xl font-serif italic text-primary"
-                >
-                    Today is the day!
-                </div>
-            `;
-
-            return false;
-
-        }
-
-
-
-        /* Calculate remaining time */
-
-        const days =
-            Math.floor(
-                distance /
-                (1000 * 60 * 60 * 24)
-            );
-
-
-        const hours =
-            Math.floor(
-                (
-                    distance %
-                    (1000 * 60 * 60 * 24)
-                ) /
-                (1000 * 60 * 60)
-            );
-
-
-        const minutes =
-            Math.floor(
-                (
-                    distance %
-                    (1000 * 60 * 60)
-                ) /
-                (1000 * 60)
-            );
-
-
-        const seconds =
-            Math.floor(
-                (
-                    distance %
-                    (1000 * 60)
-                ) /
-                1000
-            );
-
-
-
-        /* Update HTML */
-
-        daysElement.textContent =
-            String(days).padStart(2, "0");
-
-        hoursElement.textContent =
-            String(hours).padStart(2, "0");
-
-        minutesElement.textContent =
-            String(minutes).padStart(2, "0");
-
-        secondsElement.textContent =
-            String(seconds).padStart(2, "0");
-
-
-        return true;
-
-    }
-
-
-
-    /* Initial Countdown */
-
-    updateCountdown();
-
-
-
-    /* Refresh Every Second */
-
-    const countdownTimer =
-        setInterval(() => {
-
-            const active =
-                updateCountdown();
-
-
-            if (!active) {
-
-                clearInterval(
-                    countdownTimer
-                );
-
-            }
-
         }, 1000);
-
-</script>
+    </script>
 
 
 </body>
 </html>
+
