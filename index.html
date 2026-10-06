@@ -81,7 +81,28 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
+        .hero-small-text {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.9),
+        0 3px 10px rgba(0, 0, 0, 0.7);
+}
+        .hero-name {
+    color: #d6bd82;
+    text-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.75),
+        0 5px 15px rgba(0, 0, 0, 0.45);
+}
+        .hero-overlay {
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.10) 0%,
+            rgba(0, 0, 0, 0.42) 35%,
+            rgba(0, 0, 0, 0.48) 65%,
+            rgba(0, 0, 0, 0.30) 100%
+        );
+}
         /* Fade In Animation */
         .fade-in {
             animation: fadeIn 2s ease-out forwards;
@@ -204,16 +225,22 @@
 
     <section class="relative h-screen flex flex-col items-center justify-center text-center py-4 px-4 overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <div class="absolute inset-0 z-10 hero-overlay"></div>
+        <!-- <div class="absolute inset-0 bg-black/40 z-10"></div> -->
         
-        <video autoplay="" muted="" loop="" playsinline="" class="w-full h-full object-cover">
+        <!-- <video autoplay="" muted="" loop="" playsinline="" class="w-full h-full object-cover">
             <source src="hero-video-BkP1eoiB.mp4" type="video/mp4">
             <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&amp;w=2070" alt="Wedding Background">
-        </video>
+        </video> -->
+        <img
+    src="nikkah-hero.png"
+    alt="Nikkah Bride and Groom"
+    class="w-full h-full object-cover object-center"
+/>
     </div>
 
     <div class="relative z-20 max-w-4xl mx-auto drop-shadow-md">
-        <p class="text-white/80 uppercase tracking-[0.4em] mt-5 mb-4 text-xs md:text-sm font-light">
+        <p class="hero-small-text text-white uppercase tracking-[0.4em] mt-5 mb-4 text-xs md:text-sm font-light">
             We Cordially invite your esteemed presence at wedding ceremony of
         </p>
         
@@ -228,7 +255,7 @@
 
     
     <!-- Fully Connected Script Name -->
-    <h1 class="font-['Allura'] text-6xl md:text-8xl lg:text-8xl text-primary leading-none tracking-normal drop-shadow-sm">
+    <h1 class="hero-name font-['Allura'] text-6xl md:text-8xl lg:text-8xl text-primary leading-none tracking-normal drop-shadow-sm">
         Noor-Ul-Izza
     </h1>
     
@@ -244,7 +271,7 @@
          </p>
     
     <!-- Fully Connected Script Name -->
-    <h2 class="font-['Allura'] text-5xl md:text-7xl lg:text-8xl text-primary leading-none tracking-normal drop-shadow-sm">
+    <h2 class="hero-name font-['Allura'] text-5xl md:text-7xl lg:text-8xl text-primary leading-none tracking-normal drop-shadow-sm">
         Talha Gondal
     </h2>
 </div>
